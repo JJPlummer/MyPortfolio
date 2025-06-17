@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    background: pink;
+    background: rgb(220, 222, 245);
     text-align: center;
 }
 
 .navbar {
     background: linear-gradient(90deg, #333, #555);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     padding: 0;
 }
 .navbar ul {
@@ -24,7 +24,9 @@ body {
     color: #fff;
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 1.1em;
-    padding: 14px 20px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.3s, color 0.3s;
@@ -33,4 +35,68 @@ body {
     background: #fff;
     color: #333;
     text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border-radius: 0;
+    transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #92b8ff;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > .dropbtn,
+.dropdown:focus-within > .dropbtn  {
+    background-color: #555;
+    color: white;
+}
+
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.info-list {
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.info-list div {
+    padding-left: 8px;
+    font-size: 1.05em;
 }
