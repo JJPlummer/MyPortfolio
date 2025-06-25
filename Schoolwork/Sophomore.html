@@ -29,20 +29,49 @@
                 <div class="video-center">
                 <div>
                     <video class="Morsecode" width="400" controls>
-                        <source src="../videos/Morsecode.mp4" type="video/mp4">
+                        <source src="../videos/Morsecode.mp4" type="video/mp4" width="60%">>
                         Your browser does not support the video tag.
                     </video>
                     <div class="caption">Morse Code Decoder Video</div>
                 </div>
                 </div>
                 <div class="pdf">
-                    <iframe src="../pdfs/MorseCodeDocumentation.pdf" width="60%" height="750px">
-                        This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
-                    </iframe>
-                    <div class="caption">Morse Code Decoder Documentation</div>
+                    <button onclick="togglePDF()"> Show Morse Code Documentation</button>
+                    <div id="pdf-viewer" style="display:none; margin-top:16px;">
+                        <iframe src="../pdfs/MorseCodeDocumentation.pdf" width="60%" height="750px">
+                            This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
+                            <a href="../pdfs/MorseCodeDocumentation.pdf" download>Download PDF</a>
+                        </iframe>
+                        <div class="caption">Morse Code Decoder Documentation</div>
+                    </div>
                 </div>
-            </div> 
+                <script>
+                    function togglePDF() {
+                        var pdfViewer = document.getElementById("pdf-viewer");
+                        if (pdfViewer.style.display === "none") {
+                            pdfViewer.style.display = "block";
+                        } else {
+                            pdfViewer.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            <h4>ZUMO 32U4 OLED Robot - Object Avoidance</h4> 
+            <div class="info-list">
+                <div>Programmed a Zumo 32U4 OLED Robot to avoid objects using ultrasonic sensors. </div>
+                <div class="info-list">
+                    <div class="image-row">
+                        <div class="image-col">
+                            <img src="../images/Zumo.png" alt="Zumo Robot" class="ZumoRobot">
+                            <div>Zumo Robot</div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </main>
 </body>
 </html>
+        <footer>
+            <p>&copy; 2025 James Plummer</p>
+        </footer>
+    </div>
