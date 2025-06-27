@@ -3,74 +3,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshman Year - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-    <script>
-        fetch('../navbar.html')
-        .then(res => res.text())
-        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-    </script>
+    <script src="../js/main.js"></script>
+
     <main>
-        <h1>Freshman Year</h1>
-        <div class="FirstYear">
-            <h3>Courses</h3>
-            <div class="info-list">
-                <div> <strong>First Semester</strong> </div>
-                <div>Chemistry, Engineering Communications I, Intro to Engineering Design & Calculus I</div>
-                <div> <strong>Second Semester</strong> </div>
-                <div>Physics I, Engineering Communications II, Intro to Engineering Analysis, Calculus II & Physics II(Winter)</div>
-            </div>
-            <h3>Skills</h3>
-            <div class="info-list">
-                <div>This year was spent exposing me to the different engineering fields offered at Binghamton.
-                    I was introduced and strengthened my skills in CAD, MATLAB, and Arduino programming.
-                    On top of this, I took classes that helped me develped the essential math and science skills needed for my future.
+        <div class="content-container">
+            <h1>James Plummer - Freshman Year</h1>
+            <p>
+                Welcome to my freshman year page!
+            </p>
+            <div class="FirstYear">
+                <h3>Courses</h3>
+                <div class="info-list">
+                    <div> <strong>First Semester</strong> </div>
+                    <div>Chemistry, Engineering Communications I, Intro to Engineering Design & Calculus I</div>
+                    <div> <strong>Second Semester</strong> </div>
+                    <div>Physics I, Engineering Communications II, Intro to Engineering Analysis, Calculus II & Physics II(Winter)</div>
                 </div>
-            <h3>Projects</h3>
-            <h4>Head Lamp Reverse Engineering Project</h4>
-            <div class="info-list">
-                <div>Worked in a team of four to reverse engineer a product placed in front of us, and recreate it as a CAD rendering. Me and another student took the responsibility of creating the product in CAD our other teammates help write a report on potential flaws and improvements to the system.</div>
-                <div class ="image-row">
-                    <div class="image-col">
-                        <img src="../images/HeadLampFullAssemblyRender.png" alt="Head Lamp Assembly Render" class="rendering">
-                        <div>Head Lamp Assembly Render</div>
-                    </div>
-                    <div class="image-col">
-                        <img src="../images/ExplodedViewRender.png" alt="Head Lamp Exploded View Render" class="explodedRendering">
-                        <div>Head Lamp Exploded View Render</div>
+                <h3>Skills</h3>
+                <div class="info-list">
+                    <div>
+                        This year was spent exposing me to the different engineering fields offered at Binghamton.
+                        I was introduced and strengthened my skills in CAD, MATLAB, and Arduino programming.
+                        On top of this, I took classes that helped me develop the essential math and science skills needed for my future.
                     </div>
                 </div>
+                <h3>Projects</h3>
+                <h4>Head Lamp Reverse Engineering Project</h4>
+                <div class="info-list">
+                    <div>
+                        Worked in a team of four to reverse engineer a product placed in front of us, and recreate it as a CAD rendering. Me and another student took the responsibility of creating the product in CAD our other teammates help write a report on potential flaws and improvements to the system.
+                    </div>
+                    <div class="image-row">
+                        <div class="image-col">
+                            <img src="../images/HeadLampFullAssemblyRender.png" alt="Head Lamp Assembly Render" class="rendering">
+                            <div>Head Lamp Assembly Render</div>
+                        </div>
+                        <div class="image-col">
+                            <img src="../images/ExplodedViewRender.png" alt="Head Lamp Exploded View Render" class="explodedRendering">
+                            <div>Head Lamp Exploded View Render</div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Baseball Reaction Time Tester Game</h4>
+                <div class="info-list">
+                    <div>
+                        Developed a physical baseball game using a reaction time tester circuit as our inspiration.
+                    </div>
+                    <div class="video-center">
+                        <div>
+                            <video class="baseball" width="400" controls>
+                                <source src="../videos/baseballvid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="caption">Baseball Game Video</div>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-col">
+                            <img src="../images/start.png" alt="Baseball Game" class="baseball">
+                            <div>Game Start</div>
+                        </div>
+                        <div class="image-col">
+                            <img src="../images/strike.png" alt="Baseball Game" class="baseball">
+                            <div>Strike</div>
+                        </div>
+                        <div class="image-col">
+                            <img src="../images/GameOver.png" alt="Baseball Game" class="baseball">
+                            <div>Game Over</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h4>Baseball Reaction Time Tester Game</h4>
-            <div class="info-list">
-                <div>Developed a physical baseball game using a reaction time tester circuit as our inspiration. </div>
-                <div class="video-center">
-                <div>
-                    <video class="baseball" width="400" controls>
-                        <source src="../videos/baseballvid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="caption">Baseball Game Video</div>
-                </div>
-                </div>
-            <div class="image-row">
-                <div class="image-col">
-                    <img src="../images/start.png" alt="Baseball Game" class="baseball">
-                    <div>Game Start</div>
-                </div>
-                <div class="image-col">
-                        <img src="../images/strike.png" alt="Baseball Game" class="baseball">
-                        <div>Strike</div>
-                </div>
-                <div class="image-col">
-                        <img src="../images/GameOver.png" alt="Baseball Game" class="baseball">
-                        <div>Game Over</div>
-                </div>
-            </div>
-            
-            </div>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
 </html>

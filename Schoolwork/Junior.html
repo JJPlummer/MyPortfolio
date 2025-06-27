@@ -3,24 +3,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junior Year - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
+    <script src="../js/main.js"></script>
     <main>
-        <h1>Junior Year</h1>
-        <div class="ThirdYear">
-            <h3>Courses</h3>
-            <div class="info-list">
-                <div> <strong>First Semester</strong> </div>
-                <div>Signals and Systems, Electronics I, Digital Systems Design & Discrete Math</div>
-                <div> <strong>Second Semester</strong> </div>
-                <div>Programming II for Engineers (Data Structures), Computer Communication and Networking, Design Lab & Science & Technology in the Modern World</div>
+        <div class="content-container">
+            <h1>James Plummer - Junior Year</h1>
+            <p>Welcome to my junior year page!</p>
+            <div class="ThirdYear">
+                <h3>Courses</h3>
+                    <div class="info-list">
+                        <div> <strong>First Semester</strong> </div>
+                        <div>Signals and Systems, Electronics I, Digital Systems Design & Discrete Math</div>
+                        <div> <strong>Second Semester</strong> </div>
+                        <div>Programming II for Engineers (Data Structures), Computer Communication and Networking, Design Lab & Science & Technology in the Modern World</div>
+                    </div>
+                <h3>Skills</h3>
+                    <div class="info-list">
+                    <div></div>
+                    </div>
+                <h3>Projects</h3>
+                <h4>Signals and Systems - DFT processing of Sonar Signals</h4>
+                    <div class="pdf">
+                        <div id="pdf-viewer" style="margin-top:16px;">
+                            <iframe src="../pdfs/SignalsFinalProject.pdf" width="800px" height="550px">
+                                    This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
+                                <a href="../pdfs/SignalsFinalProject.pdf" download>Download PDF</a>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="../images/Signals1.png" alt="DFT Processing of Sonar Signals" class="signals">
+                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="../images/Signals2.png" alt="DFT Processing of Sonar Signals" class="signals">
+                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="../images/Signals3.png" alt="DFT Processing of Sonar Signals" class="signals">
+                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="../images/Signals4.png" alt="DFT Processing of Sonar Signals" class="signals">
+                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
             </div>
         </div>
     </main>

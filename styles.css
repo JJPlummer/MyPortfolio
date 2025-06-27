@@ -4,6 +4,16 @@ body {
     text-align: center;
 }
 
+.content-container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 24px 32px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    text-align: left;
+}
+
 .navbar {
     background: linear-gradient(90deg, #333, #555);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -79,6 +89,92 @@ body {
     background-color: #555;
     color: white;
 }
+
+.slideshow-container{
+    max-width: 1000px;
+    position:relative;
+    margin: 22px auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideshowText {
+    color:rgba(0,0,0,0.8);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    width: 100%;
+}
+
+.numbertext {
+    color: #080808;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.signals {
+    width: 100%; /* adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 
 .headshot {
     width: 200px;
@@ -165,9 +261,49 @@ body {
     color: #000;
 }
 
+.detailed-caption {
+    margin-top: 0px;
+    font-size: 0.8em !important;
+    font-weight: normal;
+    color: #858585;
+    max-width: 600px; /* optional: limit width for better readability */
+}
+
 .baseball {
     max-width: 100%;
     height: auto;
     border-radius: 8px; /* optional: rounded corners */
     box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* optional: subtle shadow */
 }
+
+.pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.pdf button {
+    margin-bottom: 16px;
+}
+
+.hidden{
+    display: none;
+}
+.side-images {
+    position: fixed;
+    top: 100px; /* adjust as needed */
+    width: auto; /* adjust as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+.side-images.left {
+    left: 10px;
+}
+
+.side-images.right {
+    right: 10px;
+}
+

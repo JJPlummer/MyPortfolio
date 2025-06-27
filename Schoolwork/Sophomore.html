@@ -3,75 +3,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophomore Year - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
+    <script src="../js/main.js"></script>
     <main>
-        <h1>Sophomore Year</h1>
-        <div class="SecondYear">
-            <h3>Courses</h3>
-            <div class="info-list">
-                <div> <strong>First Semester</strong> </div>
-                <div>Digital Logic Design, Programming I for Engineers, & Ordinary Differential Equations</div>
-                <div> <strong>Second Semester</strong> </div>
-                <div>Linear Algebra & Engineering Programming, Electric Circuits, Sophomore Design & Probabilistic Systems</div>
-            </div>
-            <h3>Projects</h3>
-            <h4>FPGA - Morse Code Decoder<h4>
-            <div class="info-list">
-                <div>Programmed a FPGA to decode morse code inputted to a button and outputted on a seven segment display.</div>
-                <div class="video-center">
-                <div>
-                    <video class="Morsecode" width="400" controls>
-                        <source src="../videos/Morsecode.mp4" type="video/mp4" width="60%">>
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="caption">Morse Code Decoder Video</div>
-                </div>
-                </div>
-                <div class="pdf">
-                    <button onclick="togglePDF()"> Show Morse Code Documentation</button>
-                    <div id="pdf-viewer" style="display:none; margin-top:16px;">
-                        <iframe src="../pdfs/MorseCodeDocumentation.pdf" width="60%" height="750px">
-                            This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
-                            <a href="../pdfs/MorseCodeDocumentation.pdf" download>Download PDF</a>
-                        </iframe>
-                        <div class="caption">Morse Code Decoder Documentation</div>
-                    </div>
-                </div>
-                <script>
-                    function togglePDF() {
-                        var pdfViewer = document.getElementById("pdf-viewer");
-                        if (pdfViewer.style.display === "none") {
-                            pdfViewer.style.display = "block";
-                        } else {
-                            pdfViewer.style.display = "none";
-                        }
-                    }
-                </script>
-            </div>
-            <h4>ZUMO 32U4 OLED Robot - Object Avoidance</h4> 
-            <div class="info-list">
-                <div>Programmed a Zumo 32U4 OLED Robot to avoid objects using ultrasonic sensors. </div>
+        <div class="content-container">
+            <h1>James Plummer - Sophomore Year</h1>
+            <p>
+                Welcome to my sophomore year page!
+            </p>
+            <div class="SecondYear">
+                <h3>Courses</h3>
                 <div class="info-list">
-                    <div class="image-row">
-                        <div class="image-col">
-                            <img src="../images/Zumo.png" alt="Zumo Robot" class="ZumoRobot">
-                            <div>Zumo Robot</div>
+                    <div> <strong>First Semester</strong> </div>
+                    <div>Digital Logic Design, Programming I for Engineers, & Ordinary Differential Equations</div>
+                    <div> <strong>Second Semester</strong> </div>
+                    <div>Linear Algebra & Engineering Programming, Electric Circuits, Sophomore Design & Probabilistic Systems</div>
+                </div>
+                <h3>Projects</h3>
+                <h4>FPGA - Morse Code Decoder</h4>
+                <div class="info-list">
+                    <div>Programmed a FPGA to decode morse code inputted to a button and outputted on a seven segment display.</div>
+                    <div class="video-center">
+                        <div>
+                            <video class="Morsecode" width="400" controls>
+                                <source src="../videos/Morsecode.mp4" type="video/mp4" width="60%">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="caption">Morse Code Decoder Video</div>
+                            <div class="detailed-caption">
+                                <p>The video above shows the Morse Code Decoder in action. I used the decoder to "write" my name in morse code, and the letters showed up on the seven segment display. 
+                                Unfortunately, we were unable to get 4 different letters to show at once.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdf">
+                        <button onclick="togglePDF()"> Show Morse Code Documentation</button>
+                        <div id="pdf-viewer" class="hidden" style="margin-top:16px;">
+                            <iframe src="../pdfs/MorseCodeDocumentation.pdf" width="800px" height="1100px">
+                                   This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
+                                <a href="../pdfs/MorseCodeDocumentation.pdf" download>Download PDF</a>
+                            </iframe>
+                            <div class="caption">Morse Code Decoder Documentation</div>
+                            <img src="../images/MorseCodeFSM.png" class="hidden">
+                            <div class="detailed-caption">
+                                <p>The image above shows the FSM we used for our letter logic. </p>  
+                            </div>
                         </div>
                     </div>
                 </div>
+                <h4>ZUMO 32U4 OLED Robot - Object Avoidance</h4>
+                <div class="info-list">
+                    <div>Programmed a Zumo 32U4 OLED Robot to avoid objects using ultrasonic sensors. </div>
+                    <div class="info-list">
+                        <div class="image-row">
+                            <div class="image-col">
+                                <img src="../images/Zumo.png" alt="Zumo Robot" class="ZumoRobot">
+                                <div class="caption">Zumo Robot</div>
+                                <div class="detailed-caption">
+                                    <p>Unfortunately I was unable to capture video of my project working. If you are interested here is a link to the github repository: <a href="https://github.com/JJPlummer/ZumoRobot" target="_blank">Zumo Robot GitHub</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2025 James Plummer</p>
+    </footer>
 </body>
 </html>
-        <footer>
-            <p>&copy; 2025 James Plummer</p>
-        </footer>
-    </div>
