@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junior Year - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
@@ -26,31 +26,26 @@
                     </div>
                 <h3>Projects</h3>
                 <h4>Signals and Systems - DFT processing of Sonar Signals</h4>
-                    <div id="pdf-viewer" style="margin-top:16px;">
-                        <div class="pdf-responsive">
-                            <iframe src="../pdfs/SignalsFinalProject.pdf"></iframe>
-                        </div>
-                    </div>
                     <div class="slideshow-container">
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 4</div>
                             <img src="../images/Signals1.png" alt="DFT Processing of Sonar Signals" class="signals">
-                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                            <div class="slideshowText">Task 1: CTFT vs DFT Analysis: Peaks clearly at 4kHz</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 4</div>
                             <img src="../images/Signals2.png" alt="DFT Processing of Sonar Signals" class="signals">
-                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                            <div class="slideshowText">Task 2a: DTFT of combined signal showing both SONAR signals</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 4</div>
                             <img src="../images/Signals3.png" alt="DFT Processing of Sonar Signals" class="signals">
-                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                            <div class="slideshowText">Task 2b: Normalized DTFT of combined signal</div>
                         </div>
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 4</div>
                             <img src="../images/Signals4.png" alt="DFT Processing of Sonar Signals" class="signals">
-                            <div class="slideshowText">DFT Processing of Sonar Signals</div>
+                            <div class="slideshowText">Task 3: DTFT of combined signal after filter: Our result lines up with the expected signal</div>
                         </div>
 
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -63,6 +58,36 @@
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
                     </div>
+                    <br>
+                    <div class="pdf">
+                        <button onclick="togglePDF('signals-pdf-viewer')"> Show Signals and Systems Documentation</button>
+                        <div id="signals-pdf-viewer" class="hidden" style="margin-top:16px;">
+                            <div class="pdf-responsive">
+                                <iframe src="../pdfs/SignalsFinalProject.pdf"></iframe>
+                            </div>
+                            <div class="caption">Signals and Systems Documentation</div>
+                        </div>
+                    </div>
+                <h4>Junior Design Project - Metal Detector</h4>
+                    <div class="info-list">
+                        <div>Designed and built a metal detector using an FPGA and a custom built solenoid circuit</div>
+                        <div class="video-center">
+                            <div>
+                                <video class="MetalDetector" width="400" controls>
+                                    <source src="../videos/MetalDetector.mp4" type="video/mp4" width="60%">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="caption">Metal Detector Video</div>
+                                <div class="detailed-caption">
+                                    <p>The video above shows the metal detector in action. We place three different sized washers on the metal detector and 
+                                        it was our job to detect the presence of metal objects as well as the size. The results were to be displayed on a seven segment display.
+                                        Our metal detector was able to correctly detect the presence of the washers, determine the size and show the results. 
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
             </div>
         </div>
     </main>

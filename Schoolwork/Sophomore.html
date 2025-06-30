@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophomore Year - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
@@ -40,12 +40,11 @@
                         </div>
                     </div>
                     <div class="pdf">
-                        <button onclick="togglePDF()"> Show Morse Code Documentation</button>
+                        <button onclick="togglePDF('pdf-viewer')"> Show Morse Code Documentation</button>
                         <div id="pdf-viewer" class="hidden" style="margin-top:16px;">
-                            <iframe src="../pdfs/MorseCodeDocumentation.pdf" width="800px" height="1100px">
-                                   This browser does not support PDFs. Please download the PDF to view it: <a href="../images/MorseCodeDecoder.pdf">Morse Code Decoder PDF</a>
-                                <a href="../pdfs/MorseCodeDocumentation.pdf" download>Download PDF</a>
-                            </iframe>
+                            <div class="pdf-responsive">
+                                <iframe src="../pdfs/MorseCodeDocumentation.pdf"></iframe>
+                            </div>
                             <div class="caption">Morse Code Decoder Documentation</div>
                             <img src="../images/MorseCodeFSM.png" class="hidden">
                             <div class="detailed-caption">

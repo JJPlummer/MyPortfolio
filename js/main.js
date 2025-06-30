@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // === PDF TOGGLE ===
-function togglePDF() {
-  const pdfViewer = document.getElementById("pdf-viewer");
+function togglePDF(id) {
+  const pdfViewer = document.getElementById(id);
   if (pdfViewer) {
     pdfViewer.classList.toggle("hidden");
   }
