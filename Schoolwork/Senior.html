@@ -7,13 +7,11 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
+    <script src="../js/main.js"></script>
     <main>
-        <h1>Senior Year</h1>
+        <div class="content-container">
+            <h1>James Plummer - Senior Year</h1>
+            <p>Welcome to my senior year page!</p>
         <div class="FourthYear">
             <h3>Courses</h3>
             <div class="info-list">
@@ -22,6 +20,19 @@
                 <div> <strong>Second Semester</strong> </div>
                 <div>Machine Learning, Fundamentals of Computer Security & Senior Project II</div>
             </div>
+            <h3>Skills</h3>
+            <div class="info-list">
+            </div>
+            <h3>Projects</h3>
+            <h4>Senior Project - Raspberry Pi Raman Spectroscope</h4>
+            <div class="pdf">
+                <button onclick="togglePDF('raman-pdf-viewer')"> Show Raspberry Pi Raman Spectroscope Slideshow</button>
+                <div id="raman-pdf-viewer" class="hidden" style="margin-top:16px;">
+                    <iframe class="pdf-responsive" src="../pdfs/FinalDesignReview.pdf"></iframe>
+                    <div class="caption">Raspberry Pi Raman Spectroscope Final Design Review</div>
+                </div>
+            </div>
+        </div>
         </div>
     </main>
 </body>
