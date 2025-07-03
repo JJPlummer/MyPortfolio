@@ -2,19 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TennesseeREU - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <title>University of Tennessee - James Plummer</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
     <main>
-        <h1>University of Tennessee - RECSEM REU</h1>
+        <div class="content-container">
+            <h1>James Plummer - University of Tennessee RECSEM REU</h1>
+            <p>Welcome to my University of Tennessee Research Experiences in Computational Science, Engineering, and Mathematics (RECSEM) Research Experience for Undergraduates (REU) page!</p>
 
+            <div class="image">
+                        <img id="senior-project-poster" src="../images/JamesPlummerKennyWongREUPoster.png" alt="Raman Spectroscope Poster">
+            </div>
+            <div id="image-modal" class="modal hidden">
+                        <span class="close" id="close-modal">&times;</span>
+                        <img class="modal-content" id="modal-img">
+            </div>
+            <div class="video-container">
+                <h2>REU Presentation Videos</h2>
+                <div class="video-row">
+                    <video controls autoplay muted loop>
+                        <source src="../videos/playing_dog.mp4" type="video/mp4">
+                    </video>
+                    <video controls autoplay muted loop>
+                        <source src="../videos/training_dog.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="../js/main.js"></script>
 </body>
 </html>

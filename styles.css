@@ -377,3 +377,19 @@ body {
     cursor: pointer;
     z-index: 1001;
 }
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.video-row video {
+    width: 100%;
+    max-width: 480px; /* adjust as needed */
+    height: 225px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}

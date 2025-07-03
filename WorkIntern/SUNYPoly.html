@@ -3,18 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUNY Polytechnic Institute - James Plummer</title>
-    <link rel="stylesheet" href="/MyPortfolio/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('../navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
     <main>
-        <h1>SUNY Polytechnic Institute</h1>
-
+        <div class="content-container">
+            <h1>James Plummer - SUNY Polytechnic Institute</h1>
+            <p>Welcome to my SUNY Polytechnic Institute page!</p>
+        
+            <div class="image">
+                        <img id="senior-project-poster" src="../images/JamesPlummerSURPPoster.png" alt="Raman Spectroscope Poster">
+                    </div>
+                    <div id="image-modal" class="modal hidden">
+                        <span class="close" id="close-modal">&times;</span>
+                        <img class="modal-content" id="modal-img">
+                    </div>
+            </div>
+        </div>
     </main>
+    <script src="../js/main.js"></script>
 </body>
 </html>
