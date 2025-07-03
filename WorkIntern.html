@@ -7,9 +7,27 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
+    <script src="/js/main.js"></script>
+    <div class="content-container">
+        <h1>James Plummer - Work/Internships</h1>
+        <p>Welcome to my work and internships page! Here you can find information about my professional experience and projects.</p>
+
+        <h1>Internships</h1>
+
+        <div class="image-grid">
+            <div class="image-cell">
+                <a href="/WorkIntern/SUNYPoly.html">
+                    <h2>SUNY Polytechnic Institute</h2>
+                    <img src="/images/JamesPlummerSURPPoster.png" alt="SURP Poster" class="rendering">
+                </a>
+            </div>
+            <div class="image-cell">
+                <a href="/WorkIntern/TennesseeREU.html">
+                    <h2>RECESEM REU - University of Tennessee</h2>
+                    <img src="/images/JamesPlummerKennyWongREUPoster.png" alt="REU Poster" class="rendering">
+                </a>
+            </div>
+        
+        </div>
+    </div>
 </body>
