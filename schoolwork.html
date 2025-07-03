@@ -7,33 +7,50 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
-    <h1>Academic Background</h1>
-    <div class="info-list">
-                <div>Graduated Cum Laude at Binghamton University, May 2025</div>
-                <div>Bachelor of Science in Computer Engineering</div>
-                <div>GPA: 3.71/4.0</div>
-                <div>Relevant Coursework: Embedded Systems, Operating Systems, Computer Architecture, Machine Learning, Digital Signal Processing.</div>
-                <div>Capstone Project: Designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system.</div>
+    <script src="/js/main.js"></script>
+    <div class="content-container">
+        <h1>James Plummer - Schoolwork</h1>
+        <p>Welcome to my schoolwork page! Here you can find information about my academic background and projects.</p>
+            <script>
+                fetch('navbar.html')
+                .then(res => res.text())
+                .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+            </script>
+        <h1>Academic Background</h1>
+        <div class="info-list">
+                    <div>Graduated Cum Laude at Binghamton University, May 2025</div>
+                    <div>Bachelor of Science in Computer Engineering</div>
+                    <div>GPA: 3.71/4.0</div>
+                    <div>Relevant Coursework: Embedded Systems, Operating Systems, Computer Architecture, Machine Learning, Digital Signal Processing.</div>
+                    <div>Capstone Project: Designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system.</div>
+        
+            <div class="image-grid">
+                <div class="image-cell">
+                    <a href="/Schoolwork/Freshman.html">
+                        <h2>Freshman Year</h2>
+                        <img src="images/HeadLampFullAssemblyRender.png" alt="Head Lamp Full Assembly Render" class="rendering">
+                    </a>
+                </div>
+                <div class="image-cell">
+                    <a href="/Schoolwork/Sophomore.html">
+                        <h2>Sophomore Year</h2>
+                        <img src="images/Zumo.png" alt="Zumo Robot" class="rendering">
+                    </a>
+                </div>
+                <div class="image-cell">
+                    <a href="/Schoolwork/Junior.html">
+                        <h2>Junior Year</h2>
+                        <img src="images/Signals1.png" alt="Signals Project" class="rendering">
+                    </a>
+                </div>
+                <div class="image-cell">
+                    <a href="/Schoolwork/Senior.html">
+                        <h2>Senior Year</h2>
+                        <img src="images/SeniorProjectPoster.png" alt="Senior Project Poster" class="rendering">
+                    </a>
+                </div>
+            </div>
     </div>
-    <h2>Freshman Year</h2>
-    <a href="/MyPortfolio/Schoolwork/Freshman.html">
-        <div class ="image-row">
-                <img src="images/HeadLampFullAssemblyRender.png" alt="Head Lamp Full Assembly Render" class="rendering">
-            </div>
-        </div>
-    </a>
-    <h2>Sophomore Year</h2>
-    <a href="/MyPortfolio/Schoolwork/Sophomore.html">
-        <div class ="image-row">
-                <img src="images/Zumo.png" alt="Zumo Robot" class="rendering">
-            </div>
-        </div>
-    </a>
 </body>
 <footer>
     <p>© 2025 James Plummer</p>
