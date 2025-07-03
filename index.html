@@ -7,35 +7,51 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-        <script>
-            fetch('navbar.html')
-            .then(res => res.text())
-            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
-        </script>
+    <script src="/js/main.js"></script>
     <section class="intro">
         <img src="images/headshot.png" alt="James Plummer" class="headshot">
         <h1>James Plummer</h1>
-        <p>Hello! My name is James, I am a recent graduate in Computer Engineering interested in new technology, and science.</p>
+        <p>Hello! My name is James, I recently graduated Magna Cum Laude from Binghamton University with a Bachelor of Science Degree in Computer Engineering. 
+            I created this website as a portfolio—a place to showcase my work and the projects I'm most proud of, both inside and outside the classroom.</p>
+        <p></p>
     </section>
     <section class="details">
-        <h2>My Hobbies</h2>
+        <h2>What I Enjoy</h2>
+        <p>When I am not working on any projects, I enjoy spending time on various hobbies that help me relax.</p>
         <div class="info-list">
-            <div>Snowboarding</div>
-            <div>Music</div>
-            <div>Video Games</div>
-            <div>Movies, Shows and Anime</div>
-            <div>Reading</div>
-            <div>Hiking, Fishing, and Camping</div>
+            <div>Snowboarding </div>
+            <div>Music - I like all genres, but I usually listen to Country, R&B, Pop and Rap </div>
+            <div>Video Games - I enjoy games like Minecraft, Pokemon, Overwatch, Fortnite and more</div>
+            <div>Movies, Shows and Anime - I love throwing on a show or movie at the end of the day, especially sci-fi and fantasy.</div>
+            <div>Reading - Currently reading: Words of Radiance by Brandon Sanderson</div>
+            <div>Hiking, Fishing, and Camping - I really enjoy hiking in the Adirondacks and spending time outdoors.</div>
         </div>
-        <h3>My Interests</h3>
+        <h3>I'm Interested In</h3>
         <div class="info-list">
             <div>Robotics</div>
             <div>Quantum Computing</div>
             <div>Space Exploration</div>
             <div>Renewable Energy</div>
-            <div>Artificial Intelligence</div>
             <div>Hardware Development</div>
+            <div>New/Upcoming Technologies</div>
         </div>
     </section>
+
+    <section class="contact"
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch with me, please feel free to reach out via email or fill out this form.</p>
+        <form action="https://formspree.io/f/xjkrzjeq" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+
 </body>
 </html>
