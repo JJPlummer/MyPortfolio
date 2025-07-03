@@ -331,4 +331,49 @@ body {
 .side-images.right {
     right: 10px;
 }
+.image {
+    width: 100%;
+    max-width: 500px; /* or whatever size you prefer */
+    margin: 0 auto 16px auto;
+    position: static; /* Remove absolute positioning */
+    display: block;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
 
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+.modal.hidden {
+    display: none;
+}
+.modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #000;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}

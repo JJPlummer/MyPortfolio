@@ -7,7 +7,6 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-    <script src="../js/main.js"></script>
     <main>
         <div class="content-container">
             <h1>James Plummer - Senior Year</h1>
@@ -25,23 +24,28 @@
             <h3>Projects</h3>
             <h4>Senior Project - Raspberry Pi Raman Spectroscope</h4>
 
-            <div class="info-list">
-                <div>Designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system.</div>
-                <div class="video-center">
-                    <iframe src="https://drive.google.com/file/d/1Q8pSD0htGn1-RO9pt4csKa58WzhrJdB5/preview" 
-                        width="640" height="360" allowfullscreen>
-                    </iframe> 
-                </div>            
+            <div>Designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system.</div>
+            <div class="image">
+                <img id="senior-project-poster" src="../images/SeniorProjectPoster.png" alt="Raman Spectroscope Poster">
+            </div>
+            <div id="image-modal" class="modal hidden">
+                <span class="close" id="close-modal">&times;</span>
+                <img class="modal-content" id="modal-img">
             </div>
             <div class="pdf">
-                <button onclick="togglePDF('raman-pdf-viewer')"> Show Raspberry Pi Raman Spectroscope Slideshow</button>
+                <button onclick="togglePDF('raman-pdf-viewer')"> Show Raman Spectroscope Slideshow</button>
                 <div id="raman-pdf-viewer" class="hidden" style="margin-top:16px;">
                     <iframe class="pdf-responsive" src="../pdfs/FinalDesignReview.pdf"></iframe>
-                    <div class="caption">Raspberry Pi Raman Spectroscope Final Design Review</div>
+                    <div class="caption">Raman Spectroscope First Semester Design Review</div>
+                </div>
+                <button onclick="togglePDF('raman-pdf-viewer-2')"> Show Raman Spectroscope Documentation</button>
+                <div id="raman-pdf-viewer-2" class="hidden" style="margin-top:16px;">
+                    <iframe class="pdf-responsive" src="../pdfs/FinalDesignReview2.pdf"></iframe>
+                    <div class="caption">Raman Spectroscope Second Semester Design Review</div>
                 </div>
             </div>
         </div>
-        </div>
     </main>
+    <script src="../js/main.js"></script>
 </body>
 </html>
