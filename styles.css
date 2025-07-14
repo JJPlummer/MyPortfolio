@@ -333,9 +333,9 @@ body {
 }
 .image {
     width: 100%;
-    max-width: 500px; /* or whatever size you prefer */
+    max-width: 500px;
     margin: 0 auto 16px auto;
-    position: static; /* Remove absolute positioning */
+    position: relative;
     display: block;
 }
 .image img {
@@ -345,7 +345,34 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     cursor: pointer;
+    position: relative; /* optional, but can help with stacking context */
+    z-index: 1;
 }
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    
+}
+
+
 
 
 .modal {
@@ -475,3 +502,4 @@ body {
 .contact-form button:hover {
     background-color: #2d3fa3;
 }
+

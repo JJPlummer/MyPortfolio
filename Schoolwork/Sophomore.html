@@ -22,10 +22,33 @@
                     <div> <strong>Second Semester</strong> </div>
                     <div>Linear Algebra & Engineering Programming, Electric Circuits, Sophomore Design & Probabilistic Systems</div>
                 </div>
+                <h3>Skills</h3>
+                <div class="info-list">
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Digital Logic Design - Verilog</li>
+                        <li>Basic Circuit Analysis</li>
+                        <li>MATLAB</li>
+                        <li>Basic Stats</li>
+                    </ul>
+                </div>
                 <h3>Projects</h3>
                 <h4>FPGA - Morse Code Decoder</h4>
                 <div class="info-list">
-                    <div>Programmed a FPGA to decode morse code inputted to a button and outputted on a seven segment display.</div>
+                    <p><strong>Basys 3 FPGA | Verilog | Xilinx Vivado | Team of 2</strong></p>
+                    <p>
+                        Developed a fully functional Morse code decoder on a Basys 3 FPGA using Verilog in Xilinx Vivado.
+                        The project allowed users to input Morse code via a single push button, which was then decoded and 
+                        displayed on the on-board seven-segment display.
+                    </p>
+                    <ul>
+                        <li>Designed and implemented multiple Finite State Machines (FSMs) to handle timing logic for dot, dash, character spacing, and word spacing detection.</li>
+                        <li>Created a clock divider to manage signal timing for interpreting user input accurately.</li>
+                        <li>Built a Morse code tree traversal FSM to decode sequences into the correct alphanumeric characters.</li>
+                        <li>Used Karnaugh maps (K-maps) to derive simplified Boolean expressions for display control logic.</li>
+                        <li>Developed a comprehensive testing strategy, validating each Morse character individually and in sequence.</li>
+                        <li>We tried to get the letters to output in a scrolling pattern but were unable to before we ran out of time.</li>
+                    </ul>
                     <div class="video-center">
                         <div>
                             <video class="Morsecode" width="400" controls>
@@ -51,9 +74,20 @@
                         </div>
                     </div>
                 </div>
-                <h4>ZUMO 32U4 OLED Robot - Object Avoidance</h4>
+                <h4>Autonomous Obstacle-Avoidance Robot</h4>
+                <p><strong>Zumo 32U4 OLED Robot | Arduino C++ | Real-Time Sensor Navigation</strong></p>
+                <p>
+                    Programmed a Zumo 32U4 robot to autonomously detect and avoid objects using ultrasonic sensors. 
+                    The robot constantly scans its environment and adjusts motion in real time based on measured distance from obstacles.
+                </p>
+                <ul>
+                    <li>Interfaced ultrasonic sensor input with the Zumo to detect proximity of obstacles in front of the robot.</li>
+                    <li>Developed an embedded C++ algorithm to analyze sensor data continuously and modify motor speed/direction on the fly.</li>
+                    <li>Displayed simple messages on the OLED screen, such as direction changes or object proximity.</li>
+                    <li>Tuned the robot's movement to avoid obstacles smoothly and operate reliably in different environments.</li>
+                </ul>
                 <div class="info-list">
-                    <div>Programmed a Zumo 32U4 OLED Robot to avoid objects using ultrasonic sensors. </div>
+                    <div> </div>
                     <div class="info-list">
                         <div class="image-row">
                             <div class="image-col">
