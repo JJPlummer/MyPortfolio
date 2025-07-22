@@ -31,8 +31,20 @@
             </div>
             <h3>Projects</h3>
             <h4>Senior Project - Raspberry Pi Raman Spectroscope</h4>
-
-            <div>Designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system.</div>
+            <p>For my senior project, I designed and built a Raspberry Pi-based Raman spectroscope with a Linear-CCD based data acquisition system. 
+                A raman spectrometer is a device that uses a laser to illuminate a sample, the reflected light gets excited and the Raman effect causes a shift in the wavelength of the light. 
+                These shifts in wavelength are characteristic of the chemical bonds in the sample, allowing us to identify the chemical composition of the sample. Our goal was to create a low-cost Raman spectroscope 
+                that could be attached to the Binghamton University Rover Team (BURT) to analyze aqueous soil samples for the presence of life.
+            </p>
+            <p>
+                This project was split between two semesters, with the first semester focusing on researching and design and inital system. I was in charge of the data acquisition system, 
+                so I worked with the CCD sensor most of the time. I also worked on designing some optical holders to secure our lenses and mirrors. At this time we were going to use a Teensy 4.1 
+                as the microcontroller, and a Raspberry Pi 4 as the main computer used for visualization and data processing. We started implementing our design in the second semester. 
+                This is when we realized that the Teensy 4.1 was not powerful enough to handle the data acquisition and processing, so we switched to a Raspberry Pi Pico. With the Pico, we were able to
+                get the CCD working as intended, and we began combining all of our components together. A big issue we ran into during this step was the noise from reflected and ambient light. We tried to minimize the 
+                noise using construction paper to dull the reflected light, as well as implementing noise cancellation into the visualization part of the project. This helped get rid of the gaussian noise and we were able
+                to get a clear spectrum from our CCD. 
+            </p>
             <div class="image">
                 <img id="senior-project-poster" src="../images/SeniorProjectPoster.png" alt="Raman Spectroscope Poster">
             </div>

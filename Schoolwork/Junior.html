@@ -32,6 +32,11 @@
                     </div>
                 <h3>Projects</h3>
                 <h4>Signals and Systems - DFT processing of Sonar Signals</h4>
+                <p>This project involved analyzing sonar signals using Discrete Fourier Transform (DFT) techniques to identify key components of the signal. 
+                    We then pretended to send out a sonar signal and get a response from an object. We took this combined signal and filtered it to get the reflected signal back. 
+                    The first image below is the CTFT vs DFT of the original sonar signal, we can see peaks at 4 kHz clearly. The next image is the DTFT of the original signal combined with the reflected signal.
+                    The third image normalizes the DTFT of the combined signal, and the last image shows the DTFT of the combined signal after filtering. As we expected, only the reflected signal remains.
+                </p>
                     <div class="slideshow-container">
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 4</div>
@@ -73,8 +78,13 @@
                         </div>
                     </div>
                 <h4>Junior Design Project - Metal Detector</h4>
-                    <div class="info-list">
-                        <div>Designed and built a metal detector using an FPGA and a custom built solenoid circuit</div>
+                <p>For my junior design project, I designed and built a metal detector using an FPGA and a custom-built solenoid circuit. I worked closely with an electrical engineering student to develop the circuit. 
+                    The solenoid circuit would return a signal with a certain duty cycle based on the size and location of the metal object. The closer the object the less the duty cycle. 
+                    We used this concept with our FPGA to determine the size of the object being detected, and displaying the results on the seven-segment display.
+                    The display shows 4 different numbers, the total number of objects detected, and the three different sizes of objects detected. Lastly there was a strength meter 
+                    implemented using the LEDs on the FPGA board, which would light up based on the size of the object, the larger the object the more LEDs lit.  
+                </p>
+                <div class="info-list">
                         <div class="video-center">
                             <div>
                                 <video class="MetalDetector" width="400" controls>
